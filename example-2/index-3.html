@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <title>Responsive HTML images demo</title>
+    <style>
+
+        header.page-header {
+            background: no-repeat left/cover url(puppy1.jpg);
+            display: flex;
+            height: 120px;
+            min-width: 120px;
+            align-items: center;
+            color: #fff;
+            text-shadow: #000 0 0 .2em;
+        }
+
+        header.page-header > h1 {
+            font: bold calc(1em + 2 * (100vw - 120px) / 100) 'Dancing Script', cursive,
+                fantasy;
+            margin: 2%;
+        }
+
+        main {
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        /* //====/// Weather forecast for Seattle */
+        .forecast {
+            margin: 0;
+            padding: .3rem;
+            background-color: #eee;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        .forecast > h1,
+        .day-forecast {
+            margin: .5rem;
+            padding: .3rem;
+            font-size: 1.2rem;
+        }
+
+        .day-forecast {
+            background: right/contain content-box border-box no-repeat
+                url('rain.png') white;
+        }
+
+        .day-forecast > h2,
+        .day-forecast > p {
+            margin: .2rem;
+            font-size: 1rem;
+        }
+
+        /* //====/// Beware of the leopard */
+        .warning {
+            border: 10px ridge #f00;
+            background-color: #ff0;
+            padding: .5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .warning img {
+            width: 100%;
+        }
+
+        .warning p {
+            font: small-caps bold 1.2rem sans-serif;
+            text-align: center;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+        <h1>Cute Puppies Express!</h1>
+    </header>
+    
+    <main>
+        <p>I love beagles <em>so</em> much! Like, really, a lot. They’re adorable and their ears are so, so snuggly soft!</p>
+    </main>
+
+    <hr>
+
+    <h1>Choosing an Apple</h1>
+    <section>
+        <h2>Introduction</h2>
+        <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+    </section>
+
+    <section>
+        <h2>Criteria</h2>
+        <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+    </section>
+
+    <hr>
+
+    <article class="forecast">
+        <h1>Weather forecast for Seattle</h1>
+        <article class="day-forecast">
+            <h2>03 March 2018</h2>
+            <p>Rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>04 March 2018</h2>
+            <p>Periods of rain.</p>
+        </article>
+        <article class="day-forecast">
+            <h2>05 March 2018</h2>
+            <p>Heavy rain.</p>
+        </article>
+    </article>
+
+    <hr>
+
+    <div class="warning">
+        <img src="leopard.jpg"
+             alt="An intimidating leopard.">
+        <p>Beware of the leopard</p>
+    </div>
+  </body>
+</html>
