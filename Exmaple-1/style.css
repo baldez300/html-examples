@@ -1,0 +1,162 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  header {
+    text-align: right;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  p,ul,ol,dl,address {
+    font-size: 1.1em;
+  }
+  
+  p, li, dd, dt, address {
+    line-height: 1.5;
+  }
+
+/* ==== for Web, Email and Phone  */
+a[href^="https"]::before {
+content: "🔗 ";
+}
+
+a[href^="mailto"]::before {
+content: "📧 ";
+}
+
+a[href^="tel"]::before {
+content: "📞 ";
+}
+
+li {
+margin-bottom: .5rem;
+}
+
+/* ======= for the video */
+/* footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+} */
+
+.output {
+    background: #eee;
+    position: relative;
+}
+/* ============== for the input */
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+/* ===== for tables */
+.batman {
+    background-color: #d7d9f2;
+}
+
+.flash {
+    background-color: #ffe8d4;
+}
+
+caption {
+    padding: 8px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(100, 100, 100);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .7rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+/* == <hr> element represents a thematic break between paragraph-level elements */
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+/* ===== for the dinosaur image */
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 205px;
+    border: 1px solid black;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/* == it is to place a background image on every paragraph on a page  */
+p {
+    background-image: url("images/image1.jpg");
+  }
+
+/* This is for my iframe format   */
+iframe {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.output {
+    background: #eee;
+}
+
+/* for Audio sample */
+audio {
+    border: 10px solid black;
+  }
+
+  
+  
